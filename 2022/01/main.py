@@ -22,9 +22,8 @@ def get_max_elf_calories():
 def get_top_three_elf_calories():
     elf_calories = map(sum, data)
     top_three_elf_calories = sorted(elf_calories, reverse=True)[:3]
-    top_three_elf_calories_sum = sum(top_three_elf_calories)
 
-    return top_three_elf_calories_sum
+    return sum(top_three_elf_calories)
 
 
 print(get_max_elf_calories())
